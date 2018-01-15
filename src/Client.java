@@ -10,9 +10,9 @@ public class Client {
 
         System.out.println("Welcome!");
         System.out.println();
-        int count = 6;
-        while (count > 0){
-            System.out.println("Please input your number(" + count + "):");
+        int countDown = 6;
+        while (countDown > 0){
+            System.out.println("Please input your number(" + countDown + "):");
             String input = scanner.nextLine();
             if(IsRepeated(input)){
                 System.out.println("Cannot input duplicate numbers!");
@@ -25,10 +25,9 @@ public class Client {
             }else {
                 System.out.println(result);
             }
-            count--;
+            countDown--;
         }
         System.out.println("Game Over");
-        System.out.println("answer : " + answer);
     }
 
     private static boolean IsRepeated(String input) {

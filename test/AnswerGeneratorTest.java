@@ -9,21 +9,21 @@ import static org.hamcrest.MatcherAssert.assertThat;
 public class AnswerGeneratorTest {
 
     @Test
-    public void shouldReturn4WhenTestLength(){
+    public void shouldReturn4WhenGetLengthOfAnswer(){
         AnswerGenerator answerGenerator = new AnswerGenerator();
         String answer = answerGenerator.generateFourDigitsWithNonRepetitve();
         assertThat(answer.length(),is(4));
     }
 
     @Test
-    public void shouldReturnTrueWhenTestIsDigit(){
+    public void shouldReturnTrueWhenAnswerContainsFourDigits(){
         AnswerGenerator answerGenerator = new AnswerGenerator();
         String answer = answerGenerator.generateFourDigitsWithNonRepetitve();
         assertThat(answer.matches("\\d{4}"),is(true));
     }
 
     @Test
-    public void shouldReturnFalseWhenTestIsRepeated(){
+    public void shouldReturnFalseWhenNoRepetitionInAnswer(){
         AnswerGenerator answerGenerator = new AnswerGenerator();
         String answer = answerGenerator.generateFourDigitsWithNonRepetitve();
         boolean result = false;
