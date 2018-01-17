@@ -91,4 +91,5 @@ public class CompareNumberTest{
         String result = compareNumber.compare("1234","4567");
         assertThat(result,is("0A1B"));
     }
+
 }

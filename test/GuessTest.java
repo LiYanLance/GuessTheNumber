@@ -26,4 +26,5 @@ public class GuessTest extends TestCase{
         assertThat(result, isOneOf(allResults));
     }
 
+
 }

@@ -37,4 +37,5 @@ public class AnswerGeneratorTest {
         }
         assertThat(result,is(false));
     }
+    
 }

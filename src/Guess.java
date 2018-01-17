@@ -7,4 +7,5 @@ public class Guess {
         String result = compareNumber.compare(answer, input);
         return result;
     }
+
 }
